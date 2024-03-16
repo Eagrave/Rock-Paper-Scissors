@@ -1,0 +1,61 @@
+:root {
+    --bg: #110819;
+    --prim: #c098e5;
+    --sec: #4f1684;
+    --text: #e9e0f1;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    color: var(--text);
+    @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Inter:wght@300&display=swap");
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Inter", sans-serif;
+  }
+
+.result{
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 20vh;
+
+}
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-choices, .bottom-choice {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10ch; 
+}
+
+.rockButton, .paperButton, .scissorButton {
+    background-color: var(--prim);
+    cursor: pointer;
+    position: relative; 
+    border-radius: 100%;
+    border-color: var(--sec);
+    border-width: 12%;
+    border-style: solid;
+    padding: 4% 4%;
+    height: 20vh;
+    width: 21vh;
+
+   
+}
+
+
+.rockButton img, .paperButton img, .scissorButton img {
+    background-color: var(--prim);
+    width: 100%; 
+    height: 100%;
+    border-radius: 100%;
+    
+}
